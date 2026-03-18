@@ -1,7 +1,7 @@
-import './project.css';
+import './projects.css';
 import { useEffect, useState } from 'react';
 
-function Project() {
+function Projects() {
     const [projects, setProjects] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(()=> {
@@ -36,5 +36,5 @@ function Project() {
     );
  
 }
-export default Project;
+export default Projects;
 

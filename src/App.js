@@ -1,4 +1,4 @@
-import Project from './projectrepo/project.js';
+import Projects from './projectrepo/projects.js';
 import './App.css';
 import { useEffect, useState } from 'react';
 
@@ -42,7 +42,7 @@ function App() {
         <h1 id='name'>NexCode IT Community</h1>
         <p id='projectsWord'>Projects</p>
 
-       <Project/>
+       <Projects/>
        
         
       </div>
