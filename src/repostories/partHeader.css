@@ -1,0 +1,22 @@
+@import "../coreStyle.css";
+
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.dottedLine{
+    width: 100%;
+    height: 0.06rem;
+    border-top: 1px dotted var(--color-prime);
+    margin-left: 0.7rem;
+}
+#slash,
+#contend{
+    font-size: 1rem;
+    color: var(--color-prime);
+    font-family: var(--font-prime);
+    white-space: nowrap;
+}

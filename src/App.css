@@ -1,61 +1,64 @@
-#app{
-  width: 100%;
-  height: 100vh;
-  display: flex;
+@import "./coreStyle.css";
+
+.app{
+  display:flex;
   flex-direction: column;
-  background-color: #41431B;
+  justify-content: center;
+  background-color: var(--color-background);
+  height:auto;
+  width : auto;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 5%;
+  padding-top:1%;
+  background-image: 
+    linear-gradient(#002211 1px, transparent 1px),
+    linear-gradient(90deg, #002211 1px, transparent 1px);
+  background-size: 40px 40px;
+
+}
+.title{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+#nameCommunity{
+  font-family: var(--font-prime);
+  color: var(--color-prime);
+  font-size: 2.5rem;
+  text-shadow:
+    0.2rem 0.2rem 0 #004422,
+    0.4rem 0.4rem 0 #002211;
+
+}
+#devcommunity{
+  font-family: var(--font-prime);
+  color: var(--color-heading);
+  font-size:0.7rem;
 }
 
-#headernexcode {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  padding-right: 20px;
-  
-  
-}
-#header{
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: flex-start;
-  gap: 20px;
-  height: 10vh;
-  font-size:  2vmin;
-  color: white;
-}
-#body{
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-h1{
-  align-self: center;
-  font-family: 'Odor Mean Chey' cursive;
-  font-weight: 800;
-  font-size: 60px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  font-family: "Monofett", monospace;
-  font-weight: 400;
-  font-style: normal;
-  color: #F8F3E1;
+#quote{
+  font-family: var(--font-prime);
+  font-size: 0.7rem;
+  color: var(--color-secondary)
 }
 
-#projectsWord{
-  font-family: "Monda", sans-serif;
-  font-style: normal;
-  color: #FFFFFF;
-  font-size: 30px;
-  padding-left: 13vw;
-  height: 2vw;
+.headernexcode{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+margin-bottom: 4rem;
+
 }
-#pages{
+#pagesButton{
+ opacity: 100%;
+ background-color: #FFF0;
+ border: none;
   cursor: pointer;
-  width: 5vw;
-  height: 10vh;
-  color: white;
-  background-color: transparent;
-  border: none;
+  color: var(--color-heading);
+  
+}
+#pagesButton:hover{
+  color: var(--color-secondary);
 }
