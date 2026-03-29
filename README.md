@@ -2,11 +2,7 @@
 here we are planning to intruduce our community and members,
 also we will intriduce our projects
 
-## Project
-of courseit is not the final version  but we will improve our web site
+## Dashboard
+Dashboard is redesighned, all the custom fonts and colors are assighned in coreStyle.css
 
-Api
-in order to fetch data from DataBase i have created a replica of backend using "Json server"
-now i fetch datas from there 
-
-![Screenshot](./images/second.png)
+![Screenshot](./images/code.png)
