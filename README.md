@@ -5,4 +5,4 @@ also we will intriduce our projects
 ## Dashboard
 Dashboard is redesighned, all the custom fonts and colors are assighned in coreStyle.css
 
-![Screenshot](./images/code.png)
+![Screenshot](./images/grid.png)
