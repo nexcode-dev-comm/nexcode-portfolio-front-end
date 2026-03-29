@@ -1,8 +1,13 @@
+<<<<<<< HEAD
 import OurStory from './repostories/ourStory';
 import partHeader from './repostories/partHeader';
 import './App.css';
 import { useEffect, useState } from 'react';
 import PartHeader from './repostories/partHeader';
+=======
+import './App.css';
+import FeaturedProjects from "./projects/FeaturedProjects";
+>>>>>>> 78db1f7 (projects part)
 
 function App() {
   const [pages, setPages] = useState([]);
@@ -29,6 +34,7 @@ function App() {
   if (loading) return <p>Loading...</p>;
 
   return (
+<<<<<<< HEAD
     <div className='app'>
       <div id='header'> 
         <div className='headernexcode'>
@@ -50,6 +56,11 @@ function App() {
         <OurStory />
          <PartHeader contend="PROJECTS" />
       </div>
+=======
+    <div>
+      <FeaturedProjects />
+      {/* Other components will also appear on green background */}
+>>>>>>> 78db1f7 (projects part)
     </div>
   );
 }

@@ -1,0 +1,68 @@
+.featured-projects {
+    background: #0a0a0a;
+    padding: 80px 20px;
+    color: #00ffcc;
+    font-family: 'Courier New', monospace;
+}
+
+.featured-projects h2 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    opacity: 0.6;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+
+.project-card {
+    background: #111;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-header h3 {
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.lang-badge {
+    font-size: 12px;
+    padding: 2px 8px;
+    background: #1a3a2a;
+    color: #00ffcc;
+    letter-spacing: 1px;
+}
+
+.project-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.7;
+}
+
+.card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.tag {
+    font-size: 12px;
+    padding: 3px 10px;
+    border: 1px solid #1a3a2a;
+    color: #00ffcc;
+    letter-spacing: 1px;
+}
