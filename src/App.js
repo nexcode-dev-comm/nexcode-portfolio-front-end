@@ -1,4 +1,4 @@
-import OurStorry from './repostories/ourStorry';
+import OurStory from './repostories/ourStory';
 import partHeader from './repostories/partHeader';
 import './App.css';
 import { useEffect, useState } from 'react';
@@ -46,8 +46,8 @@ function App() {
           <p id='devcommunity' > DEV COMMUNITY</p>
           <p id="quote">// build. ship. repeat. _</p>
         </div>
-        <PartHeader contend="OUR STORRY" />
-        <OurStorry />
+        <PartHeader contend="OUR STORY" />
+        <OurStory />
          <PartHeader contend="PROJECTS" />
       </div>
     </div>

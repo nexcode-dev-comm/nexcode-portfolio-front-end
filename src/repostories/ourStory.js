@@ -1,7 +1,7 @@
-import './ourStorry.css';
+import './ourStory.css';
 import { useEffect, useState } from 'react';
 
-function OurStorry() {
+function OurStory() {
     const [storry, setStorry] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
@@ -45,4 +45,4 @@ function OurStorry() {
         
     );
 }
-export default OurStorry;
+export default OurStory;
