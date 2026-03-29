@@ -1,7 +1,7 @@
 
 @import "../coreStyle.css";
 
-.storry-mission {
+.story-mission {
     display: grid;
     grid-template-columns: auto 1fr ; 
     row-gap: 2px;
@@ -23,7 +23,7 @@
     display: contents;
     gap: 0.1rem;
 }
-#titleOf-storry-mission{
+#titleOf-story-mission{
     font-size: 1rem;
     color: var(--color-text-secondary);
     font-family: var(--font-text);
@@ -35,7 +35,7 @@
     color: var(--color-prime);
     font-family: var(--font-text);
 }
-#storryContent{
+#storyContent{
     padding: 0;
     font-size: 1rem;
     color: var(--color-text);
@@ -45,14 +45,14 @@
     grid-column: 2;
 }
 
-.storry-cornerDots {
+.story-cornerDots {
     position: relative;
     margin: 1.5rem; /* space around the container */
     background-color: var(--color-component-background);
     
 }
 /* Base style for all corner squares */
-.storry-cornerDots .corner-dot  {
+.story-cornerDots .corner-dot  {
     padding: 0.1rem;     /* space between the square and the edge of the container */
     width: 0.1rem;      /* size of the square */
     height: 0.1rem;
@@ -60,7 +60,7 @@
     position: absolute;
 }
 
-.storry-cornerDots .corner-dot.tl { top: 0.1rem; left: 4px; }
-.storry-cornerDots .corner-dot.tr { top: 4px; right: 4px; }
-.storry-cornerDots .corner-dot.bl { bottom: 4px; left: 4px; }
-.storry-cornerDots .corner-dot.br { bottom: 4px; right: 4px; }
+.story-cornerDots .corner-dot.tl { top: 0.1rem; left: 4px; }
+.story-cornerDots .corner-dot.tr { top: 4px; right: 4px; }
+.story-cornerDots .corner-dot.bl { bottom: 4px; left: 4px; }
+.story-cornerDots .corner-dot.br { bottom: 4px; right: 4px; }

@@ -2,40 +2,40 @@ import './ourStory.css';
 import { useEffect, useState } from 'react';
 
 function OurStory() {
-    const [storry, setStorry] = useState([]);
+    const [story, setStory] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        const fetchStorry = async () => {
+        const fetchStory = async () => {
             try {
-                const response = await fetch("http://localhost:3001/storry");
+                const response = await fetch("http://localhost:3001/story");
                 const data = await response.json();
-                setStorry(data);
+                setStory(data);
                 setLoading(false);
             } catch (error) {
-                console.error("Error fetching storry:", error);
+                console.error("Error fetching story:", error);
                 setLoading(false);
             }
         };
-        fetchStorry();
+        fetchStory();
     }, []);
     if (loading) return <p>Loading...</p>;
     return (
-        < div className= 'storryFunction'>
+        < div className= 'storyFunction'>
             
             
        
-           <div className= 'storry-cornerDots'>
+           <div className= 'story-cornerDots'>
                 <span className="corner-dot tl"></span>
                 <span className="corner-dot tr"></span>
                 <span className="corner-dot bl"></span>
                 <span className="corner-dot br"></span>
-                { storry.map((item) => (                        
-                    <div className='storry-mission'>
+                { story.map((item) => (                        
+                    <div className='story-mission'>
                         <div id ='dollar-title'>
                             <span id='dollarSighn'>$</span> <tab/>
-                            <span id='titleOf-storry-mission'>{item.title}</span>                     
+                            <span id='titleOf-story-mission'>{item.title}</span>                     
                         </div>
-                        <p id='storryContent'>{item.storry}</p>  
+                        <p id='storyContent'>{item.story}</p>  
                     </div>
             
                 ), [])}
