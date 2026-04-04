@@ -8,10 +8,25 @@ function OurStory() {
         const fetchStory = async () => {
             try {
                 const response = await fetch("http://localhost:3001/story");
-                const data = await response.json();
+                let data = await response.json();
                 setStory(data);
                 setLoading(false);
             } catch (error) {
+                console.log("Server might be down -> using Fallback Data");
+                /* Fallback data */
+                setStory([
+    {
+      "id": "1",
+      "title": "cat story.txt",
+      "story": "Nexcode started as a small group chat between developers tired of building in isolation. No gatekeeping, no egos just people who love turning ideas into real things."
+    },
+    {
+      "id": "2",
+      "title": "cat mission.txt",
+      "story": "We believe the best projects are born from collaboration. Our platform exists to showcase what our community builds, celebrate progress, and connect builders at every level."
+    }
+  ]);
+                 
                 console.error("Error fetching story:", error);
                 setLoading(false);
             }
@@ -20,7 +35,7 @@ function OurStory() {
     }, []);
     if (loading) return <p>Loading...</p>;
     return (
-        < div className= 'storyFunction'>
+        < div className= 'terminalContainer'>
             
             
        
@@ -32,13 +47,17 @@ function OurStory() {
                 { story.map((item) => (                        
                     <div className='story-mission'>
                         <div id ='dollar-title'>
-                            <span id='dollarSighn'>$</span> <tab/>
+                            <span id='dollarSighn'>$</span> 
                             <span id='titleOf-story-mission'>{item.title}</span>                     
                         </div>
                         <p id='storyContent'>{item.story}</p>  
                     </div>
             
                 ), [])}
+                <div id="last-dollar-cursor">
+                    <span id='lastDollarSign'>$</span>
+                    <span id='lastCursor'>_</span>
+                </div>
            </div>
         
         </div>
