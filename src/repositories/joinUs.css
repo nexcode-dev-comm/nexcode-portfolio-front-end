@@ -1,0 +1,14 @@
+.joinUs{
+    background-color: black;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    
+    
+}
+input {
+    display: block;
+    margin: 10px 0;
+}
