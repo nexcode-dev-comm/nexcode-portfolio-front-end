@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: top;
   background-color: var(--color-background);
-  height: 100vh;
+  min-height: 100vh;
   width : auto;
   padding-right: 10%;
   padding-left: 10%;
@@ -80,7 +80,6 @@ margin-bottom: 4rem;
 #pagesButton:hover{
   color: var(--color-secondary);
 }
-
 /* Glith effect for NEXCODE*/
 #nameCommunity::after {
  content: "NEXCODE";

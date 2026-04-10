@@ -1,7 +1,7 @@
 import OurStory from './repostories/ourStory';
-import partHeader from './repostories/partHeader';
 import './App.css';
 import PartHeader from './repostories/partHeader';
+import FeaturedProjects from "./projects/FeaturedProjects";
 
 function App() {
   
@@ -21,7 +21,8 @@ function App() {
         <PartHeader contend="OUR STORY" />
         <OurStory />
          <PartHeader contend="PROJECTS" />
-      </div>
+         <FeaturedProjects />
+      </div>   
     </div>
   );
 }
