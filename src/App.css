@@ -7,6 +7,7 @@
   flex-direction: column;
   justify-content: top;
   background-color: var(--color-background);
+  background-attachment: fixed;
   min-height: 100vh;
   width : auto;
   padding-right: 10%;
@@ -14,8 +15,8 @@
   padding-bottom: 5%;
   padding-top:1%;
   background-image: 
-    linear-gradient(#002211 1px, transparent 1px),
-    linear-gradient(90deg, #002211 1px, transparent 1px);
+    linear-gradient(#02180d 1px, transparent 1px),
+    linear-gradient(90deg, #02180d 1px, transparent 1px);
   background-size: 40px 40px;
 }
 .title{
@@ -106,23 +107,8 @@ margin-bottom: 4rem;
 
 
 @keyframes glitch {
-  0%   { clip: rect(12px, 9999px, 55px, 0); }
-  5%   { clip: rect(44px, 9999px, 12px, 0); }
-  10%  { clip: rect(33px, 9999px, 77px, 0); }
-  15%  { clip: rect(66px, 9999px, 22px, 0); }
-  20%  { clip: rect(11px, 9999px, 88px, 0); }
-  25%  { clip: rect(72px, 9999px, 44px, 0); }
-  30%  { clip: rect(25px, 9999px, 99px, 0); }
-  35%  { clip: rect(90px, 9999px, 33px, 0); }
-  40%  { clip: rect(14px, 9999px, 66px, 0); }
-  45%  { clip: rect(55px, 9999px, 11px, 0); }
-  50%  { clip: rect(88px, 9999px, 44px, 0); }
-  55%  { clip: rect(22px, 9999px, 90px, 0); }
-  60%  { clip: rect(77px, 9999px, 25px, 0); }
-  65%  { clip: rect(33px, 9999px, 72px, 0); }
-  70%  { clip: rect(99px, 9999px, 14px, 0); }
-  75%  { clip: rect(44px, 9999px, 55px, 0); }
-  80%  { clip: rect(11px, 9999px, 33px, 0); }
+  0%   { clip: rect(0, 0, 0, 0); }
+  80%  { clip: rect(0, 0, 0, 0); }
   85%  { clip: rect(66px, 9999px, 88px, 0); }
   90%  { clip: rect(25px, 9999px, 44px, 0); }
   100% { clip: rect(90px, 9999px, 11px, 0); }

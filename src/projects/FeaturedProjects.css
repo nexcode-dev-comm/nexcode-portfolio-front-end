@@ -1,29 +1,24 @@
-.featured-projects {
-    background: #0a0a0a;
-    padding: 80px 20px;
-    color: #00ffcc;
-    font-family: 'Courier New', monospace;
-}
+@import '../coreStyle.css';
 
 .featured-projects h2 {
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin-bottom: 30px;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    margin-bottom: 2rem;
     opacity: 0.6;
 }
 
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2px;
+    gap: .5rem;
 }
 
 .project-card {
-    background: #111;
-    padding: 24px;
+    background: var(--color-component-background);
+    padding: 1.5rem;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: .75rem;
 }
 
 .card-header {
@@ -33,36 +28,44 @@
 }
 
 .card-header h3 {
-    font-size: 14px;
-    letter-spacing: 2px;
-    color: #ffffff;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    color: var(--color-prime);
 }
 
 .lang-badge {
-    font-size: 12px;
-    padding: 2px 8px;
-    background: #1a3a2a;
-    color: #00ffcc;
-    letter-spacing: 1px;
+    border-color: var(--color-prime);
+    border: .16rem solid;
+    font-size:.9rem;
+    padding: .1rem .5rem;
+    background: rgba(0, 255, 136, .5);    
+    color: var(--color-prime);
+    letter-spacing: .08rem;
 }
 
 .project-card p {
-    font-size: 13px;
-    color: #666;
+    font-size: .75rem;
+    color: var(--color-text);
     line-height: 1.7;
 }
 
 .card-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: .5rem;
     margin-top: auto;
 }
 
 .tag {
-    font-size: 12px;
-    padding: 3px 10px;
+    font-size: .75rem;
+    padding: .25rem .7rem;
     border: 1px solid #1a3a2a;
-    color: #00ffcc;
-    letter-spacing: 1px;
+    color: var(--color-prime);
+    letter-spacing: .08rem;
+}
+#projectDescription{
+    font-family: var(--font-text);
+}
+#projectName{
+    font-family: var(--font-prime);
 }

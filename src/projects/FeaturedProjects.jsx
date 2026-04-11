@@ -35,7 +35,6 @@ const projects = [
 function FeaturedProjects() {
     return (
         <section className="featured-projects">
-            <h2>// FEATURED PROJECTS</h2>
             <div className="projects-grid">
                 {projects.map((project) => (
                     <ProjectCard key={project.id} project={project} />

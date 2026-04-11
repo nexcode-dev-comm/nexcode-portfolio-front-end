@@ -1,14 +1,14 @@
 :root{
-    --color-prime: #00FF88;
+    --color-prime: #00ff88;
     --color-secondary: #FFDD00;
     --color-heading : #888888;
     --color-text-secondary : #C8C8B0;
     --color-text :#AAA;
-    --color-background:#0A1A0A;
+    --color-background:#050f05;
     --color-component-background: #060610;
     --font-prime : "Press Start 2P";
     --font-secondary : "Press Start 2P";
-    --font-text :  "monospace"
+    --font-text :  monospace
     /*font-secondary needs to be changed, figma doesnt give correct name*/
 
 }
