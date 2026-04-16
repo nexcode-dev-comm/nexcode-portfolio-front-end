@@ -1,14 +1,13 @@
 import OurStory from './repostories/ourStory';
 import './App.css';
 import PartHeader from './repostories/partHeader';
+import JoinUs from './repositories/joinUs.js';
 import FeaturedProjects from "./projects/FeaturedProjects";
 
 function App() {
   
-
   return (
     <div className='app'>
-
       <div className='body'>
         <div className='title'>
           <h1 id='nameCommunity'>NEXCODE</h1>
@@ -22,7 +21,9 @@ function App() {
         <OurStory />
          <PartHeader contend="PROJECTS" />
          <FeaturedProjects />
-      </div>   
+         <PartHeader contend="JOIN.US" />
+         <JoinUs /> 
+      </div>  
     </div>
   );
 }

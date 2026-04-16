@@ -8,7 +8,7 @@
     --color-component-background: #060610;
     --font-prime : "Press Start 2P";
     --font-secondary : "Press Start 2P";
-    --font-text :  monospace
+    --font-text :  monospace;
     /*font-secondary needs to be changed, figma doesnt give correct name*/
 
 }
