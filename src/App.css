@@ -1,21 +1,23 @@
 @import "./coreStyle.css";
 
+/* Removes default browser spacing */
+
 .app{
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   background-color: var(--color-background);
-  height:auto;
+  background-attachment: fixed;
+  min-height: 100vh;
   width : auto;
   padding-right: 10%;
   padding-left: 10%;
   padding-bottom: 5%;
   padding-top:1%;
   background-image: 
-    linear-gradient(#002211 1px, transparent 1px),
-    linear-gradient(90deg, #002211 1px, transparent 1px);
+    linear-gradient(#02180d 1px, transparent 1px),
+    linear-gradient(90deg, #02180d 1px, transparent 1px);
   background-size: 40px 40px;
-
 }
 .title{
   display:flex;
@@ -23,6 +25,7 @@
   align-items: center;
 }
 #nameCommunity{
+  position: relative;
   font-family: var(--font-prime);
   color: var(--color-prime);
   font-size: 2.5rem;
@@ -36,11 +39,27 @@
   color: var(--color-heading);
   font-size:0.7rem;
 }
-
+.quoteContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
 #quote{
   font-family: var(--font-prime);
   font-size: 0.7rem;
   color: var(--color-secondary)
+}
+#quoteCursor{
+  font-family: var(--font-prime);
+  font-size: 0.7rem;
+  color: var(--color-secondary);
+  animation: 
+  cursor .4s step-end infinite alternate;
+}
+@keyframes cursor {
+  0% {opacity: 0;}
+  50% {opacity: .9;}
+  100% {opacity: 1;}
 }
 
 .headernexcode{
@@ -61,4 +80,36 @@ margin-bottom: 4rem;
 }
 #pagesButton:hover{
   color: var(--color-secondary);
+}
+/* Glith effect for NEXCODE*/
+#nameCommunity::after {
+ content: "NEXCODE";
+  position: absolute;
+  left: 0.125rem;
+  top: 0.125rem;
+  clip: rect(0, 900px, 0, 0);
+  background-color: black;
+  color: var(--color-prime);
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 4s;
+}
+#nameCommunity::before {
+ content: "NEXCODE";
+  position: absolute;
+  left: -0.125rem;
+  top: -0.125rem;
+  clip: rect(0, 900px, 1rem, 0);
+  background-color: black;
+  color: var(--color-prime);
+  animation: glitch 3s infinite alternate-reverse;
+  animation-delay: 4s;
+}
+
+
+@keyframes glitch {
+  0%   { clip: rect(0, 0, 0, 0); }
+  80%  { clip: rect(0, 0, 0, 0); }
+  85%  { clip: rect(66px, 9999px, 88px, 0); }
+  90%  { clip: rect(25px, 9999px, 44px, 0); }
+  100% { clip: rect(90px, 9999px, 11px, 0); }
 }
