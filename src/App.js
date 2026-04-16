@@ -3,6 +3,7 @@ import partHeader from './repostories/partHeader';
 import './App.css';
 import { useEffect, useState } from 'react';
 import PartHeader from './repostories/partHeader';
+import JoinUs from './repositories/joinUs.js';
 
 function App() {
   const [pages, setPages] = useState([]);
@@ -49,6 +50,9 @@ function App() {
         <PartHeader contend="OUR STORY" />
         <OurStory />
          <PartHeader contend="PROJECTS" />
+         <PartHeader contend="JOIN.US" />
+         <JoinUs />
+
       </div>
     </div>
   );

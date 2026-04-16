@@ -5,35 +5,24 @@ function JoinUs () {
     const [showForm, setShowForm] = useState(false);
 
     return (
-        <div className="joinUs">
-            { !showForm ? (
-              <>
-                <h1>READY TO BUILD SOMETHING?</h1>
-                <p> the community is free, the code is yours.</p>
-
+        <div className= 'joinUsContainer'>
+            <span className="corner-dot tl"></span>
+            <span className="corner-dot tr"></span>
+            <span className="corner-dot bl"></span>
+            <span className="corner-dot br"></span>
+            <div className='header'>
+                <h1 id="contend" >READY TO BUILD SOMETHING?</h1>  
+            </div>
+            <p id='devcommunity'> //the community is free, the code is yours.</p>
+            <div className="button-group">
                 <button onClick={() => setShowForm(true)}>
                     JOIN DISCORD
                 </button>
 
-                <button type="viewgithub">
+                <button>
                     VIEW GITHUB
                 </button>
-              </>
-            ) : (
-                <>
-                  <h1>Join Community</h1>
-                
-                  <input type="text" placeholder="Your Name" />
-                  <input type="text" placeholder="Your Surname" />
-                  <input type="text" placeholder="Your Email" />
-                  <button type="submit">Submit</button>
-
-                  <button onClick={() => setShowForm(false)}>
-                    Bach
-                  </button>
-                </>
-            )}
-            
+            </div>
         </div>
     );
 }
